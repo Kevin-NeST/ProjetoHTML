@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body style="background-color: #1E1E1E;">
+    <header>
+        <h2 style="color: #6b6b6b;text-align: center;">Formulário de inscrição para vaga de emprego</h2>
+    </header>
+
+    <div style="border: solid 1px #807f7f;margin: 2% 30%;">
+        <div style="width: 50%;padding: 10px;">
+            <form action="/cadastrar.php" method="post">
+
+                <div>
+                    <ul>
+                        <li style="list-style: none;"><label for="nome" style="color: #807f7f;">Nome completo: *</label>
+                        </li>
+                        <li style="list-style: none;"><input type="text" id="nome"
+                                style="background-color: #4d4c4c;border:none;width:auto; color: #acaaaa;"></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li style="list-style: none;"><label for="email" style="color: #807f7f;">E-mail: *</label></li>
+                        <li style="list-style: none;"><input type="email" id="email"
+                                style="background-color: #4d4c4c;border:none;width:auto; color: #acaaaa;"></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li style="list-style: none;"><label for="telefone" style="color: #807f7f;">Telefone: *</label>
+                        </li>
+                        <li style="list-style: none;"><input type="tel" id="telefone"
+                                style="background-color: #4d4c4c;border:none;width:auto; color: #acaaaa;"></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li style="list-style: none;">
+                            <label for="estCivil" style="color: #807f7f;">Estado Civil: *</label>
+                        </li>
+
+                        <li style="list-style: none;">
+
+                            <select name="estCivil" id="estCivil"
+                                style="background-color: #4d4c4c;border: none;color: #acaaaa;">
+                                <option value="solteiro">Solteiro</option>
+                                <option value="casado">Casado</option>
+                                <option value="separado">Separado</option>
+                                <option value="viuvo">Viuvo</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li style="list-style: none;">
+                            <label for="vaga" style="color: #807f7f;">Escolha a vaga: *</label>
+                        </li>
+                        <fieldset>
+                            <div>
+                                <input type="checkbox" id="devEstagio" name="interesse" value="devEstagio">
+                                <label for="devEstagio" style="color: #807f7f;">Estágio Dev</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="devJunior" name="interesse" value="devJunior">
+                                <label for="devJunior" style="color: #807f7f;">Dev Junior</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="devPleno" name="interesse" value="devPleno">
+                                <label for="devPleno" style="color: #807f7f;">Dev Pleno</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="devSenior" name="interesse" value="devSenior">
+                                <label for="devSenior" style="color: #807f7f;">Dev Senior</label>
+                            </div>
+                        </fieldset>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li style="list-style: none;">
+                            <label for="observacao" style="color: #807f7f;">Observações: (opcional)</label>
+                        </li>
+                        <li style="list-style: none;">
+                            <textarea id="observacao" name="observacao" rows="4" cols="50" style="background-color: #4d4c4c;color: #acaaaa;border: none;">
+                                At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                            </textarea>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <button type="submit" style="background-color: #4d4c4c;border: none;padding: 5px;border-radius: 5px;color: #acaaaa;">Enviar sua mensagem</button>
+                    </ul>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
